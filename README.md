@@ -1,23 +1,71 @@
-# Cracking the Code to Box Office Success: Factor Analysis and ML Revenue Prediction Model
+# Cracking the Code to Box Office Success
 
-![Project Image](images/project_image.jpg) (Replace with an image relevant to your project)
+This project explores the factors influencing the financial success of movies. This GitHub repository contains the code and analysis for scraping movie data from [IMDb](https://www.imdb.com/search/title/?title_type=feature&num_votes=5000,&languages=en&sort=boxoffice_gross_us,desc&explore=genres&view=advanced), preprocessing the data, performing exploratory data analysis (EDA), and building a machine learning model to predict movie gross revenue.
+
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Correlation Matrix Analysis](#correlation-matrix-analysis)
+3. [Number of Movies Released Over the Years](#number-of-movies-released-over-the-years)
+4. [Revenue Over the Years](#revenue-over-the-years)
+5. [Movie Box Office by Top Directors](#movie-box-office-by-top-directors)
+6. [Movie Box Office by Top Stars](#movie-box-office-by-top-stars)
+7. [Notebooks and Models](#notebooks-and-models)
 
 ## Project Overview
+The goal of this project is to uncover insights into the key factors contributing to a movie's success at the box office. I achieved this by scraping movie data from IMDb, performing extensive data preprocessing, and conducting exploratory data analysis. This analysis revealed valuable information about the relationships between various attributes of movies and their financial performance. Finally, I built a machine learning model to predict movie gross revenue based on these insights.
 
-This project explores the factors contributing to the box office success of movies and develops a machine learning model to predict a movie's revenue. The analysis is based on data scraped from IMDb website, and the project is structured into the following components:
+## Correlation Matrix Analysis
+![__results___12_2](https://github.com/Shrey5555/-Cracking-the-Code-to-Box-Office-Success-Factor-Analysis-and-ML-Revenue-Prediction-Model-/assets/136813149/87a3d347-dcfc-4177-abd6-254ba244cefd)
+In data analysis, understanding the relationships between variables is crucial. The correlation matrix analysis provides insights into how numerical features in the dataset are related to one another. Here are some key insights from our analysis:
 
-- **Data:** Contains the IMDb ratings dataset (`data/imdb_ratings.csv`) obtained from [IMDb](https://www.imdb.com/search/title/?title_type=feature&num_votes=5000,&languages=en&sort=boxoffice_gross_us,desc&explore=genres&view=advanced) and preprocessed to remove missing and duplicate values.
+### Votes vs. Gross ($):
+- 'Votes' and 'Gross ($)' show a strong positive correlation (0.624), indicating that movies with more votes tend to have higher gross earnings.
+  
+### Runtime (Minutes) vs. Other Attributes:
+- 'Runtime (Minutes)' has a positive correlation with 'IMDB' (0.387), 'Metascore' (0.263), 'Votes' (0.314), and 'Gross ($)' (0.241), suggesting that longer movies tend to have higher IMDb and Metascore ratings, more votes, and potentially higher gross earnings.
 
-- **Notebooks:** Includes Jupyter notebooks for each major step in the project:
-  - [`webscrapping-movie-dataset.ipynb`](notebooks/webscrapping-movie-dataset.ipynb): Web scraping IMDb data.
-  - [`exploring-movie-success-factors.ipynb`](notebooks/exploring-movie-success-factors.ipynb): Exploratory Data Analysis and Data Visualization.
-  - [`movie-box-office-prediction.ipynb`](notebooks/movie-box-office-prediction.ipynb): Building and evaluating machine learning models for revenue prediction.
+### IMDB vs. Other Attributes:
+- 'IMDB' is positively correlated with 'Metascore' (0.736) and 'Votes' (0.409), indicating that movies with higher IMDb ratings tend to also have higher Metascores and accumulate more votes.
 
-- **Models:** This directory will contain trained machine learning models for revenue prediction 
+### Metascore vs. Other Attributes:
+- 'Metascore' has a positive correlation with 'Votes' (0.256), suggesting that movies with higher Metascores tend to receive more votes.
 
-## Getting Started
+These correlations can help identify potential factors that contribute to a movie's success, such as runtime, ratings, and audience engagement.
 
+## Number of Movies Released Over the Years
+![__results___16_0](https://github.com/Shrey5555/-Cracking-the-Code-to-Box-Office-Success-Factor-Analysis-and-ML-Revenue-Prediction-Model-/assets/136813149/6a57108a-3594-4194-93fe-427a6217c506)
+This analysis of the trend in movie releases over time reveals interesting insights into the historical pattern of movie production. Key observations include:
 
+- There has been a generally upward trend in the number of movies released over the years, indicating the growth of the film industry.
+- An anomaly is observed in the years 2020-2021, with a sharp decline in the number of movies released due to the global COVID-19 pandemic's impact on film production.
 
-Contact
+## Revenue Over the Years
+![__results___18_0](https://github.com/Shrey5555/-Cracking-the-Code-to-Box-Office-Success-Factor-Analysis-and-ML-Revenue-Prediction-Model-/assets/136813149/93eabdba-82d6-40bd-9500-43cb877b1776)
+This analysis of movie revenue trends displays the total revenue generated by movies in 3-year intervals. Key findings include:
+
+- There is a consistent upward trend in movie revenue over the years, indicating the overall growth of the film industry.
+- A significant dip in movie revenue during the 2020-2022 interval is attributed to the impact of the COVID-19 pandemic, which disrupted the film industry.
+
+## Movie Box Office by Top Directors
+![__results___36_0](https://github.com/Shrey5555/-Cracking-the-Code-to-Box-Office-Success-Factor-Analysis-and-ML-Revenue-Prediction-Model-/assets/136813149/a47b7b47-185e-4a65-b7c6-8a41a467e89e)
+Contrary to the expectation that directing a higher number of movies would result in the highest box office revenue, the analysis revealed that prolific directors didn't always have the most financially successful films. The number of films directed did not necessarily translate into top box office earnings. Factors such as the quality, appeal, and impact of individual movies played a more crucial role in determining a director's success at the box office.
+
+## Movie Box Office by Top Stars
+![__results___45_0](https://github.com/Shrey5555/-Cracking-the-Code-to-Box-Office-Success-Factor-Analysis-and-ML-Revenue-Prediction-Model-/assets/136813149/4e91b357-2e25-40b2-961b-abe2e2f7d045)
+In a similar vein, the analysis of top actors challenged the assumption that starring in a greater number of movies would directly lead to higher box office revenue. Instead, our findings showed that the quantity of films an actor appeared in did not guarantee top financial success. The star power, charisma, and appeal an actor brought to their roles were more influential factors in a movie's box office performance.
+
+## Notebooks and Models
+This project includes Jupyter notebooks for each major step in the analysis and machine learning model development:
+
+### Notebooks:
+- [`webscrapping-movie-dataset.ipynb`](notebooks/webscrapping-movie-dataset.ipynb): This notebook covers the process of web scraping IMDb data, collecting the necessary information for our analysis.
+- [`exploring-movie-success-factors.ipynb`](notebooks/exploring-movie-success-factors.ipynb): In this notebook, you'll find the comprehensive Exploratory Data Analysis (EDA) and data visualization that provided insights into the factors contributing to a movie's success.
+- [`movie-box-office-prediction.ipynb`](notebooks/movie-box-office-prediction.ipynb): This notebook guides you through the process of building and evaluating machine learning models for predicting movie revenue based on the collected data.
+
+### Models:
+In the `models` directory, you will find trained machine learning models for revenue prediction. These models have been developed using the insights gained from the EDA and can be used to predict the gross revenue of movies based on various features. Please refer to the individual notebook for details on how these models were trained and evaluated.
+
+This project's findings shed light on the complex dynamics of the film industry and provide valuable insights into what makes a successful movie at the box office. Feel free to explore the code and analysis to learn more about the factors that influence movie success.
+
+## Contact
 If you have any questions regarding this project, please feel free to reach out to me at [Email_id](shreygupta0509@gmail.com).
