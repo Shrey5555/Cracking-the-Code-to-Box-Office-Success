@@ -61,4 +61,5 @@ This project includes Jupyter notebooks for each major step in the analysis and 
 - [`movie-box-office-prediction.ipynb`](movie-box-office-prediction.ipynb): This notebook guides you through the process of building and evaluating machine learning models for predicting movie revenue based on the collected data.
 
 This project's findings shed light on the complex dynamics of the film industry and provide valuable insights into what makes a successful movie at the box office. Feel free to explore the code and analysis to learn more about the factors that influence movie success.
-Contact: If you have any questions regarding this project, please feel free to reach out to me at [Email_id](shreygupta0509@gmail.com).
+
+**Contact:** If you have any questions regarding this project, please feel free to reach out to me at [Email_id](shreygupta0509@gmail.com).
