@@ -47,7 +47,7 @@ To optimize the performance of the selected models, hyperparameter tuning was co
 
 ### Model Accuracy
 
-After fine-tuning the hyperparameters, the machine learning model achieved an impressive accuracy of 92%. This means that our model can predict movie revenues with a high level of precision, providing valuable insights for the film industry.
+After fine-tuning the hyperparameters, the machine learning model achieved an impressive accuracy of 92%. This means that the model can predict movie revenues with a high level of precision, providing valuable insights for the film industry.
 ![download (4)](https://github.com/Shrey5555/Cracking-the-Code-to-Box-Office-Success/assets/136813149/9e487272-a219-4b83-8072-ecc911c9b4a9)
 
 The machine learning model's performance is a testament to the power of data analysis and predictive modeling in understanding and forecasting box office success. Please refer to the specific notebook ([`movie-box-office-prediction.ipynb`]((movie-box-office-prediction.ipynb)) for in-depth details on model development, hyperparameter tuning, and evaluation.
@@ -56,7 +56,7 @@ The machine learning model's performance is a testament to the power of data ana
 
 This project includes Jupyter notebooks for each major step in the analysis and machine learning model development:
 
-- [`webscrapping-movie-dataset.ipynb`](webscrapping-movie-dataset.ipynb): This notebook covers the process of web scraping IMDb data, collecting the necessary information for our analysis.
+- [`webscrapping-movie-dataset.ipynb`](webscrapping-movie-dataset.ipynb): This notebook covers the process of web scraping IMDb data, collecting the necessary information for the analysis.
 - [`exploring-movie-success-factors.ipynb`](exploring-movie-success-factors.ipynb): In this notebook, you'll find the comprehensive Exploratory Data Analysis (EDA) and data visualization that provided insights into the factors contributing to a movie's success.
 - [`movie-box-office-prediction.ipynb`](movie-box-office-prediction.ipynb): This notebook guides you through the process of building and evaluating machine learning models for predicting movie revenue based on the collected data.
 
