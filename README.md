@@ -66,6 +66,4 @@ This project includes Jupyter notebooks for each major step in the analysis and 
 In the `models` directory, you will find trained machine learning models for revenue prediction. These models have been developed using the insights gained from the EDA and can be used to predict the gross revenue of movies based on various features. Please refer to the individual notebook for details on how these models were trained and evaluated.
 
 This project's findings shed light on the complex dynamics of the film industry and provide valuable insights into what makes a successful movie at the box office. Feel free to explore the code and analysis to learn more about the factors that influence movie success.
-
-## Contact
-If you have any questions regarding this project, please feel free to reach out to me at [Email_id](shreygupta0509@gmail.com).
+Contact: If you have any questions regarding this project, please feel free to reach out to me at [Email_id](shreygupta0509@gmail.com).
