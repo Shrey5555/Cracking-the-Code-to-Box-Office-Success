@@ -9,7 +9,7 @@ This project explores the factors influencing the financial success of movies. T
 4. [Movie Box Office by Top Directors](#movie-box-office-by-top-directors)
 5. [Movie Box Office by Top Stars](#movie-box-office-by-top-stars)
 6. [Machine Learning Model](#machine-learning-model)
-7. [Notebooks and Models](#notebooks-and-models)
+7. [Notebooks](#notebooks)
 
 ## Project Overview
 The goal of this project is to uncover insights into the key factors contributing to a movie's success at the box office. I achieved this by scraping movie data from IMDb, performing extensive data preprocessing, and conducting exploratory data analysis. This analysis revealed valuable information about the relationships between various attributes of movies and their financial performance. Finally, I built a machine learning model to predict movie gross revenue based on these insights.
@@ -43,25 +43,22 @@ In this project a machine learning model to predict the gross revenue of movies 
 After experimenting with several machine learning models, including random forest, boosting, regression, decision trees, and support vector machines, it was found that Random Forest and Gradient Boosting were the most promising algorithms for revenue prediction task. These models demonstrated strong predictive capabilities and outperformed other algorithms.
 
 ### Model Fine-Tuning
-To optimize the performance of the selected models, hyperparameter tuning was conducted, which involved fine-tuning the key parameters of the Random Forest and Gradient Boosting models. This process allowed us to achieve a high level of accuracy of 92% in revenue predictions.
+To optimize the performance of the selected models, hyperparameter tuning was conducted, which involved fine-tuning the key parameters of the Random Forest and Gradient Boosting models. This process allowed to achieve a high level of accuracy of 92.11% in revenue predictions in the Random Forest Model.
 
 ### Model Accuracy
 
 After fine-tuning the hyperparameters, the machine learning model achieved an impressive accuracy of 92%. This means that our model can predict movie revenues with a high level of precision, providing valuable insights for the film industry.
-![newplot (3)](https://github.com/Shrey5555/Cracking-the-Code-to-Box-Office-Success/assets/136813149/d28877ea-a003-4802-ae34-8652517e12fb)
+![download (4)](https://github.com/Shrey5555/Cracking-the-Code-to-Box-Office-Success/assets/136813149/9e487272-a219-4b83-8072-ecc911c9b4a9)
 
 The machine learning model's performance is a testament to the power of data analysis and predictive modeling in understanding and forecasting box office success. Please refer to the specific notebook ([`movie-box-office-prediction.ipynb`](notebooks/movie-box-office-prediction.ipynb)) for in-depth details on model development, hyperparameter tuning, and evaluation.
 
-## Notebooks and Models
+## Notebooks
+
 This project includes Jupyter notebooks for each major step in the analysis and machine learning model development:
 
-### Notebooks:
 - [`webscrapping-movie-dataset.ipynb`](webscrapping-movie-dataset.ipynb): This notebook covers the process of web scraping IMDb data, collecting the necessary information for our analysis.
 - [`exploring-movie-success-factors.ipynb`](exploring-movie-success-factors.ipynb): In this notebook, you'll find the comprehensive Exploratory Data Analysis (EDA) and data visualization that provided insights into the factors contributing to a movie's success.
 - [`movie-box-office-prediction.ipynb`](movie-box-office-prediction.ipynb): This notebook guides you through the process of building and evaluating machine learning models for predicting movie revenue based on the collected data.
-
-### Models:
-In the `models` directory, you will find trained machine learning models for revenue prediction. These models have been developed using the insights gained from the EDA and can be used to predict the gross revenue of movies based on various features. Please refer to the individual notebook for details on how these models were trained and evaluated.
 
 This project's findings shed light on the complex dynamics of the film industry and provide valuable insights into what makes a successful movie at the box office. Feel free to explore the code and analysis to learn more about the factors that influence movie success.
 Contact: If you have any questions regarding this project, please feel free to reach out to me at [Email_id](shreygupta0509@gmail.com).
