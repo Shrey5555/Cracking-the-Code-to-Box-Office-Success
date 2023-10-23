@@ -55,9 +55,9 @@ The machine learning model's performance is a testament to the power of data ana
 This project includes Jupyter notebooks for each major step in the analysis and machine learning model development:
 
 ### Notebooks:
-- [`webscrapping-movie-dataset.ipynb`](notebooks/webscrapping-movie-dataset.ipynb): This notebook covers the process of web scraping IMDb data, collecting the necessary information for our analysis.
-- [`exploring-movie-success-factors.ipynb`](notebooks/exploring-movie-success-factors.ipynb): In this notebook, you'll find the comprehensive Exploratory Data Analysis (EDA) and data visualization that provided insights into the factors contributing to a movie's success.
-- [`movie-box-office-prediction.ipynb`](notebooks/movie-box-office-prediction.ipynb): This notebook guides you through the process of building and evaluating machine learning models for predicting movie revenue based on the collected data.
+- [`webscrapping-movie-dataset.ipynb`](webscrapping-movie-dataset.ipynb): This notebook covers the process of web scraping IMDb data, collecting the necessary information for our analysis.
+- [`exploring-movie-success-factors.ipynb`](exploring-movie-success-factors.ipynb): In this notebook, you'll find the comprehensive Exploratory Data Analysis (EDA) and data visualization that provided insights into the factors contributing to a movie's success.
+- [`movie-box-office-prediction.ipynb`](movie-box-office-prediction.ipynb): This notebook guides you through the process of building and evaluating machine learning models for predicting movie revenue based on the collected data.
 
 ### Models:
 In the `models` directory, you will find trained machine learning models for revenue prediction. These models have been developed using the insights gained from the EDA and can be used to predict the gross revenue of movies based on various features. Please refer to the individual notebook for details on how these models were trained and evaluated.
