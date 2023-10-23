@@ -4,34 +4,15 @@ This project explores the factors influencing the financial success of movies. T
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
-2. [Correlation Matrix Analysis](#correlation-matrix-analysis)
-3. [Number of Movies Released Over the Years](#number-of-movies-released-over-the-years)
-4. [Revenue Over the Years](#revenue-over-the-years)
-5. [Movie Box Office by Top Directors](#movie-box-office-by-top-directors)
-6. [Movie Box Office by Top Stars](#movie-box-office-by-top-stars)
-7. [Machine Learning Model](#machine-learning-model)
-8. [Notebooks and Models](#notebooks-and-models)
+2. [Number of Movies Released Over the Years](#number-of-movies-released-over-the-years)
+3. [Revenue Over the Years](#revenue-over-the-years)
+4. [Movie Box Office by Top Directors](#movie-box-office-by-top-directors)
+5. [Movie Box Office by Top Stars](#movie-box-office-by-top-stars)
+6. [Machine Learning Model](#machine-learning-model)
+7. [Notebooks and Models](#notebooks-and-models)
 
 ## Project Overview
 The goal of this project is to uncover insights into the key factors contributing to a movie's success at the box office. I achieved this by scraping movie data from IMDb, performing extensive data preprocessing, and conducting exploratory data analysis. This analysis revealed valuable information about the relationships between various attributes of movies and their financial performance. Finally, I built a machine learning model to predict movie gross revenue based on these insights.
-
-## Correlation Matrix Analysis
-![__results___12_2](https://github.com/Shrey5555/-Cracking-the-Code-to-Box-Office-Success-Factor-Analysis-and-ML-Revenue-Prediction-Model-/assets/136813149/87a3d347-dcfc-4177-abd6-254ba244cefd)
-In data analysis, understanding the relationships between variables is crucial. The correlation matrix analysis provides insights into how numerical features in the dataset are related to one another. Here are some key insights from our analysis:
-
-### Votes vs. Gross ($):
-- 'Votes' and 'Gross ($)' show a strong positive correlation (0.624), indicating that movies with more votes tend to have higher gross earnings.
-  
-### Runtime (Minutes) vs. Other Attributes:
-- 'Runtime (Minutes)' has a positive correlation with 'IMDB' (0.387), 'Metascore' (0.263), 'Votes' (0.314), and 'Gross ($)' (0.241), suggesting that longer movies tend to have higher IMDb and Metascore ratings, more votes, and potentially higher gross earnings.
-
-### IMDB vs. Other Attributes:
-- 'IMDB' is positively correlated with 'Metascore' (0.736) and 'Votes' (0.409), indicating that movies with higher IMDb ratings tend to also have higher Metascores and accumulate more votes.
-
-### Metascore vs. Other Attributes:
-- 'Metascore' has a positive correlation with 'Votes' (0.256), suggesting that movies with higher Metascores tend to receive more votes.
-
-These correlations can help identify potential factors that contribute to a movie's success, such as runtime, ratings, and audience engagement.
 
 ## Number of Movies Released Over the Years
 ![__results___16_0](https://github.com/Shrey5555/-Cracking-the-Code-to-Box-Office-Success-Factor-Analysis-and-ML-Revenue-Prediction-Model-/assets/136813149/6a57108a-3594-4194-93fe-427a6217c506)
