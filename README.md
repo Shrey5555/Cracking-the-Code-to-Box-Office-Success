@@ -48,6 +48,7 @@ To optimize the performance of the selected models, hyperparameter tuning was co
 ### Model Accuracy
 
 After fine-tuning the hyperparameters, the machine learning model achieved an impressive accuracy of 92%. This means that our model can predict movie revenues with a high level of precision, providing valuable insights for the film industry.
+![newplot (2)](https://github.com/Shrey5555/Cracking-the-Code-to-Box-Office-Success/assets/136813149/d8e4ac9d-7e9a-48f4-9041-6048ff08798f)
 
 The machine learning model's performance is a testament to the power of data analysis and predictive modeling in understanding and forecasting box office success. Please refer to the specific notebook ([`movie-box-office-prediction.ipynb`](notebooks/movie-box-office-prediction.ipynb)) for in-depth details on model development, hyperparameter tuning, and evaluation.
 
