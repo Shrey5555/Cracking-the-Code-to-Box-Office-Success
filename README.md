@@ -9,7 +9,8 @@ This project explores the factors influencing the financial success of movies. T
 4. [Revenue Over the Years](#revenue-over-the-years)
 5. [Movie Box Office by Top Directors](#movie-box-office-by-top-directors)
 6. [Movie Box Office by Top Stars](#movie-box-office-by-top-stars)
-7. [Notebooks and Models](#notebooks-and-models)
+7. [Machine Learning Model](#machine-learning-model)
+8. [Notebooks and Models](#notebooks-and-models)
 
 ## Project Overview
 The goal of this project is to uncover insights into the key factors contributing to a movie's success at the box office. I achieved this by scraping movie data from IMDb, performing extensive data preprocessing, and conducting exploratory data analysis. This analysis revealed valuable information about the relationships between various attributes of movies and their financial performance. Finally, I built a machine learning model to predict movie gross revenue based on these insights.
@@ -52,7 +53,22 @@ Contrary to the expectation that directing a higher number of movies would resul
 
 ## Movie Box Office by Top Stars
 ![__results___45_0](https://github.com/Shrey5555/-Cracking-the-Code-to-Box-Office-Success-Factor-Analysis-and-ML-Revenue-Prediction-Model-/assets/136813149/4e91b357-2e25-40b2-961b-abe2e2f7d045)
-In a similar vein, the analysis of top actors challenged the assumption that starring in a greater number of movies would directly lead to higher box office revenue. Instead, our findings showed that the quantity of films an actor appeared in did not guarantee top financial success. The star power, charisma, and appeal an actor brought to their roles were more influential factors in a movie's box office performance.
+In a similar vein, the analysis of top actors challenged the assumption that starring in a greater number of movies would directly lead to higher box office revenue. Instead, the findings showed that the quantity of films an actor appeared in did not guarantee top financial success. The star power, charisma, and appeal an actor brought to their roles were more influential factors in a movie's box office performance.
+
+## Machine Learning Model
+In this project a machine learning model to predict the gross revenue of movies based on the collected data was developed. The model-building process involved testing various machine learning algorithms to determine the best performer.
+
+### Model Selection and Performance
+After experimenting with several machine learning models, including random forest, boosting, regression, decision trees, and support vector machines, it was found that Random Forest and Gradient Boosting were the most promising algorithms for revenue prediction task. These models demonstrated strong predictive capabilities and outperformed other algorithms.
+
+### Model Fine-Tuning
+To optimize the performance of the selected models, hyperparameter tuning was conducted, which involved fine-tuning the key parameters of the Random Forest and Gradient Boosting models. This process allowed us to achieve a high level of accuracy of 92% in revenue predictions.
+
+### Model Accuracy
+
+After fine-tuning the hyperparameters, the machine learning model achieved an impressive accuracy of 92%. This means that our model can predict movie revenues with a high level of precision, providing valuable insights for the film industry.
+
+The machine learning model's performance is a testament to the power of data analysis and predictive modeling in understanding and forecasting box office success. Please refer to the specific notebook ([`movie-box-office-prediction.ipynb`](notebooks/movie-box-office-prediction.ipynb)) for in-depth details on model development, hyperparameter tuning, and evaluation.
 
 ## Notebooks and Models
 This project includes Jupyter notebooks for each major step in the analysis and machine learning model development:
